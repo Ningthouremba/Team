@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+      * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+      img{
+      height: 40rem;
+      width: 85rem;
+      }
+      h1{
+      position: absolute;
+      bottom: 35.4rem;
+      right: 70rem;
+      color: rgb(32, 32, 240);
+      }
+      .web{
+      position: absolute;
+      display: flex;
+      font-size: 3rem;
+      color: rgb(32, 32, 240); 
+      top: 8.6rem;
+      left: 9rem;
+      }
+      .title{
+      display: flex;
+      position: absolute;
+      bottom: 35.9rem;
+      font-size: 15px;
+      left: 18rem;
+      list-style: none;
+      
+      gap: 3rem;
+      color: darkblue;
+      
+      }
+      .title li a{
+        text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: darkblue;
+  position: relative;
+      }
+      .title li a::after, .title .active::after {
+content: "";
+position:absolute;
+background: darkblue;
+width: 100%;
+height: .1rem;
+right: 0;
+bottom: -5px;
+transform: scaleX(0);
+transform-origin: bottom right;
+transition: transform .3s;
+}
+.title li a:hover::after, .title .active::after{
+  transform: scalex(1);
+  transform-origin: bottom left;
+}
+      .input-box{
+        position: relative; 
+        bottom: 17.5rem; 
+        margin: 13px;
+        font-size: 24px;
+        left: 135px;
+        }
+.input-box input
+{
+
+  width:20%;
+    height: 35px;
+    background: transparent;
+    border: 2px solid#177cf0;
+    outline: none;
+    border-radius: 42px;
+    font-size: .6em;
+    color: #fff;
+    padding: 0 16px;
+    transition: .5s;
+}
+ label{
+position: relative;
+font-size: 12px;
+}
+.input-box label {
+position: absolute;
+top: 50%;
+left: 12px;
+transform: translateY(-50%);
+font-size: 16px;
+color: #fff;
+pointer-events: none;
+transition: .4s ease;
+}
+.input-box input:focus~label,
+.input-box input:valid~label
+{
+    top: 1px;
+    font-size: .6em;
+    background: #fff; 
+    color: aqua;
+    padding: 0 6px;
+}
+.input-box input:focus,
+.input-box input:valid
+{
+border-color: aqua;
+} 
+ #tomba{
+  position: absolute;
+bottom: 35.4rem;
+left: 71rem;
+font-size: 13.5px;
+padding: 8px;
+border-radius: 81px;
+border: none; 
+
+ }   
+ #tomba {
+        background-color:  white                ;
+        }
+            #tomba:hover { 
+            background-color: rgb(29, 172, 172)
+        }
+        
+    
+    
+    .ch{
+position: absolute;
+bottom: 35.4rem;
+left: 75rem;
+font-size: 12px;
+border-radius: 87px;
+padding: 7px;
+color: #fff;
+
+    }
+    .ch {
+        background-color:  rgb(20, 194, 194)                 ;
+        }
+            .ch:hover { 
+            background-color: rgb(94, 175, 175)
+        }
+        .ch:active{
+          background-color: aqua;
+        }
+  #send{
+  position: absolute;
+  bottom: 7rem;
+  left: 9rem;
+  padding: 8px;
+  width: 72px;
+  border-radius: 40px;
+  border: none;
+  background-color: aquamarine;
+  }
+  #send:hover{
+  background-color: #177cf0;
+  }
+  
+  p{
+  position: absolute;
+  bottom: 23rem;
+  width: 40rem;
+  left: 9.3rem;
+  color: #262525;;
+  } 
+  #icon{
+    position: absolute;
+  font-size: 14px;
+  width: 1.4rem;
+  height: 1.4rem;
+  left: 44.4rem;
+  bottom: 35.8rem;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(52, 64, 230);
+  } 
+  #icon i {
+    color: #fff;
+  }
+  #icon:hover{
+  background-color: black;
+  }
+    </style>
+    
+</head>
+<body>
+<img src="imange.jpg" alt="">
+  <h1>Hi! everyone</h1>
+  <p class="web">Web Developers.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, qui officia? Accusantium praesentium explicabo ipsa sint architecto quas! Praesentium atque, eum consequuntur ratione similique quae ipsa nobis ullam fugit itaque?</p>
+<ul class="title">
+  <li><a href="#" class="active">Home</a></li>
+  <li><a href="#">Service</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">About</a></li>
+ 
+  <div class="overight"></div>
+</ul>
+<button id="icon"><i class="fa fa-search"></i></button>
+<div class="input-box">
+  <input type="name" required>
+  <label>Name</label>
+</div>
+<div class="input-box">
+  <input type="email" required>
+  <label>Email</label>
+</div>
+<button id="send">Send</button>
+ <button id="tomba">Sign in</button>
+<button class="ch">Sign Up</button>
+
+</body>
+</html>
